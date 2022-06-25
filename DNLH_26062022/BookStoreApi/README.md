@@ -54,8 +54,8 @@ Elastic Beanstalk
 ---
 ## ![Features-of-aws-elastic-beanstalk | 100x100](../Documentation/Images/features-of-aws-elastic-beanstalk.jpg)
 
-Picture courtesy https://image4.slideserve.com/8217987/features-of-aws-elastic-beanstalk-3-l.jpg
 ---
+Picture courtesy https://image4.slideserve.com/8217987/features-of-aws-elastic-beanstalk-3-l.jpg
 
 ## Mongo DB
 
