@@ -9,7 +9,7 @@
 
 ---
 
-![Jagadesh|150x150](../documentation/Images/Jagadesh.PNG)
+![Jagadesh|150x150](../Documentation/Images/Jagadesh.PNG)
 
 ---
 
