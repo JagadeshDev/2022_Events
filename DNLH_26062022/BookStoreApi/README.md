@@ -6,7 +6,7 @@
 
 ## Youtube URL: [https://www.youtube.com/watch?v=yu8o1ray_cU](https://www.youtube.com/watch?v=yu8o1ray_cU)
 
-![Viswanatha Swamy P K |150x150](./documentation/images/Jagadesh.PNG)
+![Jagadesh|150x150](../documentation/images/Jagadesh.PNG)
 
 ---
 
