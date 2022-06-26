@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "f52dc558-6928-4add-a941-55415deab6a5",
+		"name": "BooksAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10399402"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Get Books",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V2\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7103/api/Books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7103",
+							"path": [
+								"api",
+								"Books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V2\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7103/api/Books/62b40a733daa94316c93b7cf",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7103",
+							"path": [
+								"api",
+								"Books",
+								"62b40a733daa94316c93b7cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add newBook  record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V2\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7103/api/Books",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7103",
+							"path": [
+								"api",
+								"Books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Book  record",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V1\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7103/api/Books/62b7ef373567c7721ced1665",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7103",
+							"path": [
+								"api",
+								"Books",
+								"62b7ef373567c7721ced1665"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Book  record",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7103/api/Books/62b7ef813567c7721ced1666",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7103",
+							"path": [
+								"api",
+								"Books",
+								"62b7ef813567c7721ced1666"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Elastic Beanstalk",
+			"item": [
+				{
+					"name": "Get Books",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V2\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webapibeanstalk-env-1.eba-n2uenp7s.ap-south-1.elasticbeanstalk.com/api/Books",
+							"protocol": "http",
+							"host": [
+								"webapibeanstalk-env-1",
+								"eba-n2uenp7s",
+								"ap-south-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"api",
+								"Books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V2\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webapibeanstalk-env-1.eba-n2uenp7s.ap-south-1.elasticbeanstalk.com/api/Books/62b40a733daa94316c93b7cf",
+							"protocol": "http",
+							"host": [
+								"webapibeanstalk-env-1",
+								"eba-n2uenp7s",
+								"ap-south-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"api",
+								"Books",
+								"62b40a733daa94316c93b7cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add newBook  record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V2\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webapibeanstalk-env-1.eba-n2uenp7s.ap-south-1.elasticbeanstalk.com/api/Books",
+							"protocol": "http",
+							"host": [
+								"webapibeanstalk-env-1",
+								"eba-n2uenp7s",
+								"ap-south-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"api",
+								"Books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updated the Book  record",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookName\": \"Clean Code V1\",\r\n  \"price\": 100,\r\n  \"category\": \"Architecture\",\r\n  \"author\": \"BeanStalk and AWS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webapibeanstalk-env-1.eba-n2uenp7s.ap-south-1.elasticbeanstalk.com/api/Books/62b7ef373567c7721ced1665",
+							"protocol": "http",
+							"host": [
+								"webapibeanstalk-env-1",
+								"eba-n2uenp7s",
+								"ap-south-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"api",
+								"Books",
+								"62b7ef373567c7721ced1665"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Book  record",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webapibeanstalk-env-1.eba-n2uenp7s.ap-south-1.elasticbeanstalk.com/api/Books/62b7ef813567c7721ced1666",
+							"protocol": "http",
+							"host": [
+								"webapibeanstalk-env-1",
+								"eba-n2uenp7s",
+								"ap-south-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"api",
+								"Books",
+								"62b7ef813567c7721ced1666"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
