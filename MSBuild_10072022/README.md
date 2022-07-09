@@ -61,6 +61,13 @@ Binding to a function is a way of declaratively connecting another resource to t
 
 ## ![SQL Bindings | 100x100](./Documentation/Images/SQL_Bindings.jpg)
 
+### Considerations
+> 1. Because the Azure SQL bindings doesn't have a trigger, you need to use another supported trigger to start a function that reads from or writes to an Azure SQL database.
+> 1. Azure SQL binding supports version 2.x and later of the Functions runtime.
+> 1. Source code for the Azure SQL bindings can be found in this <a href="https://github.com/Azure/azure-functions-sql-extension" target="_blank">GitHub repository</a>.
+> 1. This binding requires connectivity to an Azure SQL or SQL Server database.
+> 1. Output bindings against tables with columns of data types NTEXT, TEXT, or IMAGE aren't supported and data upserts will fail. These types <a href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql" target="_blank">will be removed</a> in a future version of SQL Server and aren't compatible with the OPENJSON function used by this Azure Functions binding.
+
 ## 3. Demo of Azure Function with SQL bindings. (30 Minutes)
 Demo.. time.. Lets do a deep dive.....!!
 ## ![Deep Dive | 100x100](./Documentation/Images/Deep_Dive.gif)
