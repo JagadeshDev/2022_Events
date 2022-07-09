@@ -1,0 +1,8 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "Azure_Sql_Connection": "Server=tcp:demo-community-server.database.windows.net,1433;Initial Catalog=ECommerce;Persist Security Info=False;User ID=jagadesh;Password=Jaggu@123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}
