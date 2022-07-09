@@ -12,7 +12,7 @@ namespace Company.Function
 
         //[FunctionName("add_customers")]
         //public static IActionResult Post(
-        //        [HttpTrigger(AuthorizationLevel.Function, "post,put", Route = "customers")] HttpRequest req,
+        //        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")] HttpRequest req,
         //        [Sql("[dbo].[Customer]",
         //    CommandType = System.Data.CommandType.Text,
         //    ConnectionStringSetting = "Azure_Sql_Connection")] out Customer customer,
@@ -30,7 +30,7 @@ namespace Company.Function
 
         //[FunctionName("add_customers")]
         //public static IActionResult Post(
-        //        [HttpTrigger(AuthorizationLevel.Function, "post,put", Route = "customers")]
+        //        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")]
         //        [FromBody] Customer cust,
         //        [Sql("[dbo].[Customer]",
         //    ConnectionStringSetting = "Azure_Sql_Connection")] out Customer customer,
@@ -40,9 +40,9 @@ namespace Company.Function
         //    return new CreatedResult($"api/customers", customer);
         //}
 
-        [FunctionName("add_customers")]
+        [FunctionName("add_customer")]
         public static async Task<IActionResult> Post(
-                [HttpTrigger(AuthorizationLevel.Function, "post,put", Route = "customers")]
+                [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")]
                 [FromBody] Customer[] custs,
                 [Sql("[dbo].[Customer]",
             ConnectionStringSetting = "Azure_Sql_Connection")] IAsyncCollector<Customer> customers,
