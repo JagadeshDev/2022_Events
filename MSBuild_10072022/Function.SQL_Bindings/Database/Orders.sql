@@ -1,0 +1,23 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Orders](
+	[Orderid] [varchar](50) NOT NULL,
+	[Item] [varchar](50) NULL,
+	[Price] [float] NULL,
+	[CustomerId] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+ALTER TABLE [dbo].[Orders] ADD PRIMARY KEY CLUSTERED 
+(
+	[Orderid] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD  CONSTRAINT [FK_CustomerOrder] FOREIGN KEY([CustomerId])
+REFERENCES [dbo].[Customer] ([CustomerId])
+GO
+ALTER TABLE [dbo].[Orders] CHECK CONSTRAINT [FK_CustomerOrder]
+GO
