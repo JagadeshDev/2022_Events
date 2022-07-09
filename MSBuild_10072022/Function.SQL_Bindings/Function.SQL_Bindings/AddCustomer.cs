@@ -40,7 +40,7 @@ namespace Company.Function
         //    return new CreatedResult($"api/customers", customer);
         //}
 
-        [FunctionName("add_customer")]
+        [FunctionName("add_customers")]
         public static async Task<IActionResult> Post(
                 [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")]
                 [FromBody] Customer[] custs,
