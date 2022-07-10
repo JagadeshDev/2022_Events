@@ -4,6 +4,12 @@
 
 ## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/286232863/](https://www.meetup.com/dot-net-learners-house-hyderabad/events/286232863)
 
+---
+## Youtube URL: [https://www.youtube.com/watch?v=yu8o1ray_cU](https://www.youtube.com/watch?v=yu8o1ray_cU)
+
+---
+
+![Jagadesh|150x150](./Documentation/Images/Jagadesh.PNG)
 
 ---
 
@@ -35,7 +41,7 @@
 
 ## Information
 
-## ![Information | 100x100](../Documentation/Images/Information.PNG)
+## ![Information | 100x100](./Documentation/Images/Information.PNG)
 
 ## What are we doing today?
 
@@ -52,7 +58,7 @@
 
 Elastic Beanstalk
 ---
-## ![Features-of-aws-elastic-beanstalk | 100x100](../Documentation/Images/features-of-aws-elastic-beanstalk.jpg)
+## ![Features-of-aws-elastic-beanstalk | 100x100](./Documentation/Images/features-of-aws-elastic-beanstalk.jpg)
 
 ---
 Picture courtesy https://image4.slideserve.com/8217987/features-of-aws-elastic-beanstalk-3-l.jpg
@@ -63,13 +69,13 @@ MongoDB is a source-available cross-platform document-oriented database program.
 
 What and When
 
-## ![Relational vs DocumentDB | 100x100](../Documentation/Images/Relational_vs_DocumentDB.png)
+## ![Relational vs DocumentDB | 100x100](./Documentation/Images/Relational_vs_DocumentDB.png)
 
 
-## ![Difference between SQL and NOSQL | 100x100](../Documentation/Images/Difference-between-SQL-and-NOSQL.png)
+## ![Difference between SQL and NOSQL | 100x100](./Documentation/Images/Difference-between-SQL-and-NOSQL.png)
 
 
-## ![SQL-MongoDB Correspondence | 100x100](../Documentation/Images/SQL-MongoDB-Correspondence.PNG)
+## ![SQL-MongoDB Correspondence | 100x100](./Documentation/Images/SQL-MongoDB-Correspondence.PNG)
 
 ## 2. Mongo Db in Mongo Atlas (2 Minutes)
 
@@ -78,7 +84,7 @@ https://www.mongodb.com/
 
 ## 3. NET 6 Web API (6 Minutes)
 Demo.. time.. Lets do a deep dive.....!!
-## ![Deep Dive | 100x100](../Documentation/Images/Deep_Dive.gif)
+## ![Deep Dive | 100x100](./Documentation/Images/Deep_Dive.gif)
 
 ## 4. Executing it locally (IIS Express, Kestrel) (4 Minutes)
 
