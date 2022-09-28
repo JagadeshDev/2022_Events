@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SQL_Bindings_Func": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7197",
+      "launchBrowser": false
+    }
+  }
+}
