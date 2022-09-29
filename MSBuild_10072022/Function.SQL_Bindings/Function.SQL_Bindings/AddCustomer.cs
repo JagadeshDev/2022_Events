@@ -28,33 +28,33 @@ namespace Company.Function
         //    return new CreatedResult($"api/customers", customer);
         //}
 
-        //[FunctionName("add_customers")]
-        //public static IActionResult Post(
-        //        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")]
-        //        [FromBody] Customer cust,
-        //        [Sql("[dbo].[Customer]",
-        //    ConnectionStringSetting = "Azure_Sql_Connection")] out Customer customer,
-        //        ILogger log)
-        //{
-        //    customer = cust;
-        //    return new CreatedResult($"api/customers", customer);
-        //}
-
         [FunctionName("add_customers")]
-        public static async Task<IActionResult> Post(
+        public static IActionResult Post(
                 [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")]
-                [FromBody] Customer[] custs,
+                [FromBody] Customer cust,
                 [Sql("[dbo].[Customer]",
-            ConnectionStringSetting = "Azure_Sql_Connection")] IAsyncCollector<Customer> customers,
+            ConnectionStringSetting = "Azure_Sql_Connection")] out Customer customer,
                 ILogger log)
         {
-            foreach (var cust in custs)
-            {
-                await customers.AddAsync(cust);
-            }
-
-            return new CreatedResult($"api/customers", "done");
+            customer = cust;
+            return new CreatedResult($"api/customers", customer);
         }
+
+        //[FunctionName("add_customers")]
+        //public static async Task<IActionResult> Post(
+        //        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "customers")]
+        //        [FromBody] Customer[] custs,
+        //        [Sql("[dbo].[Customer]",
+        //    ConnectionStringSetting = "Azure_Sql_Connection")] IAsyncCollector<Customer> customers,
+        //        ILogger log)
+        //{
+        //    foreach (var cust in custs)
+        //    {
+        //        await customers.AddAsync(cust);
+        //    }
+
+        //    return new CreatedResult($"api/customers", "done");
+        //}
     }
 
 }
