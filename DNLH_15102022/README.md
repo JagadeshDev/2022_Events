@@ -82,7 +82,7 @@ Demo.. time.. Lets do a deep dive.....!!
 
 ## 5. Deploy Stage and acess from Postman/API Gateway (3 Minutes)
 
-## 6. Add Usage Plan and Acess Key and assign it to a stage
+## 6. Add Usage Plan and Acess Key and assign it to a stage (10 Minutes)
 
 ---
 
