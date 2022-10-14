@@ -3,23 +3,23 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProductsAPI.Models
 {
-    [DynamoDBTable("Products")]
-    public class Product
-    {
-        [DynamoDBHashKey]
-        public string Id { get; set; } = string.Empty;
+        [DynamoDBTable("Products")]
+        public class Product
+        {
+            [DynamoDBHashKey]
+            public string Id { get; set; } = string.Empty;
 
-        [DynamoDBProperty]
-        public string PictureUrl { get; set; } = $"/images/books/Book{new Random().Next(1, 10)}.jpg";
+            [DynamoDBProperty]
+            public string PictureUrl { get; set; } = $"/images/books/Book{new Random().Next(1, 10)}.jpg";
 
-        [DynamoDBProperty]
-        public string Name { get; set; } = string.Empty;
+            [DynamoDBProperty]
+            public string Name { get; set; } = string.Empty;
 
-        [DynamoDBProperty]
-        public string Description { get; set; } = string.Empty;
+            [DynamoDBProperty]
+            public string Description { get; set; } = string.Empty;
 
-        [DynamoDBProperty]
-        public bool IsActive { get; set; } = true;
+            [DynamoDBProperty]
+            public bool IsActive { get; set; } = true;
 
         [DynamoDBProperty]
         [Column(TypeName = "decimal(18,2)")]

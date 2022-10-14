@@ -54,11 +54,6 @@ namespace ProductsAPI.Controllers
 
             var scanOps = new ScanOperationConfig();
 
-            //if (!string.IsNullOrEmpty(paginationToken))
-            //{
-            //    scanOps.PaginationToken = paginationToken;
-            //}
-
             // returns the set of Document objects for the supplied ScanOptions
             var results = table.Scan(scanOps);
             List<Document> productsData = await results.GetNextSetAsync();
